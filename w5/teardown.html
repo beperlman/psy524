@@ -1,0 +1,449 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="color-scheme" content="light"><title>Teardown: your group</title><style>
+:root { --navy:#1F2A44; --muted:#4f5d78; --blue:#2f6fb3; --soft:#e3effb; --line:#d8e1ee; --cream:#fbf0d6; --edge:#dec996; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:#fff; color:var(--navy); font-family:"Avenir Next",Avenir,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; font-size:17px; line-height:1.5; }
+main { max-width:680px; margin:0 auto; padding:16px 16px 48px; }
+.top { font-size:14px; color:var(--muted); margin-bottom:6px; }
+.top a { color:var(--blue); text-decoration:none; }
+h1 { font-size:26px; line-height:1.2; margin:6px 0 12px; }
+h2 { font-size:20px; margin:22px 0 8px; }
+p { margin:8px 0; }
+img { width:100% !important; height:auto; display:block; margin:8px 0; border:1px solid var(--line); border-radius:6px; }
+.shots img + img { margin-top:10px; }
+.claim, .doc { background:#f4f6f9; border:1px solid var(--line); border-radius:10px; padding:10px 14px; margin:10px 0; }
+.lead, .h { font-weight:700; }
+.task, .qbox, .qbox2 { border:2px solid var(--navy); border-radius:10px; padding:10px 14px; margin:12px 0; font-weight:600; }
+.task { text-align:center; font-size:20px; }
+.qbox2 { background:var(--cream); border-color:var(--edge); }
+.qbox ol, .qbox2 ol { margin:4px 0; padding-left:20px; }
+.src, .pg { display:block; font-size:13px; color:var(--muted); margin:4px 0; }
+.key, .notes { font-size:14px; color:var(--muted); }
+.foot { font-size:12px; color:#7a8599; border-top:1px solid var(--line); padding-top:6px; margin-top:20px; }
+blockquote { margin:8px 0; padding:6px 12px; border-left:4px solid var(--blue); background:var(--soft); border-radius:4px; }
+ol, ul { padding-left:22px; }
+li { margin:6px 0; }
+table { border-collapse:collapse; width:100%; }
+table.side, table.side > tbody, table.side > tbody > tr, table.side > tbody > tr > td { display:block; width:100%; }
+table.side > colgroup, table.side > thead { display:none; }
+table.side > tbody > tr > td { border:1px solid var(--line); border-radius:8px; padding:8px 10px; margin:8px 0; }
+table.side > tbody > tr > td:first-child::before { content:"The shop page"; display:block; font-weight:700; font-size:14px; color:var(--muted); }
+table.side > tbody > tr > td:last-child::before { content:"The FDA summary of the trial"; display:block; font-weight:700; font-size:14px; color:var(--muted); }
+table.t8 { margin:6px 0; font-size:15px; }
+table.t8 th, table.t8 td { border:1px solid var(--line); padding:4px 6px; text-align:left; }
+table.t8 td.sub { padding-left:18px; }
+</style><style>
+#draw { width:100%; min-height:64px; font:inherit; font-size:20px; font-weight:700; color:#fff; background:var(--navy);
+        border:0; border-radius:14px; margin:8px 0 4px; }
+#banner { border-radius:16px; padding:18px 18px 14px; margin:8px 0 16px; text-align:center; }
+#banner span { display:block; font-size:40px; font-weight:800; line-height:1.1; }
+#banner small { display:block; font-size:16px; margin-top:6px; }
+details { margin-top:24px; border-top:1px solid var(--line); padding-top:10px; }
+summary { cursor:pointer; color:var(--blue); font-weight:600; }
+#olinks a { display:inline-block; margin:8px 14px 0 0; color:var(--blue); }
+</style></head><body><main><p class="top"><a href="../">&larr; Class page</a> · PSY524 · Week 5</p>
+<h1>Teardown: your group</h1>
+<div id="drawbox">
+  <p>Three groups, one device each. Tap once to get your group, then sit together with it.</p>
+  <button id="draw" type="button">Draw my group</button>
+</div>
+<div id="banner" hidden><span id="bname"></span><small>Sit together with the <b id="bname2"></b> group. Your sheet is below.</small></div>
+<section class="g" id="g-emotiv" hidden><h1 id="teardown-emotiv-insight">Teardown: Emotiv Insight</h1>
+<div class="qbox">
+<ol type="1">
+<li>What do they claim?</li>
+<li>What would have to be true? Who did it learn from? Who was it tested
+on?</li>
+<li>What happens to what it records?</li>
+</ol>
+</div>
+<h2 id="the-product-page">The product page</h2>
+<div class="shots">
+<img src="img/emotiv-insight-product-top.png"><img src="img/emotiv-insight-privacy-box.png">
+</div>
+<p class="src">
+Emotiv Insight product page, emotiv.com/products/insight
+</p>
+<ul>
+<li>“5 Channel Portable EEG Headband”</li>
+<li>“Its research-validated signal quality and comfortable design
+support reliable brain data collection for interactive applications,
+learning, and applied neuroscience in natural environments.”</li>
+<li>“Affective (emotion-state) metrics are not available in workplace or
+educational deployments.”</li>
+<li>“Science-first. Privacy-respecting.” “Your brain data is encrypted,
+stored under a non-identifying reference, and yours to access or
+delete.”</li>
+<li>At the foot of the page, under “*Disclaimer”: “Emotiv products are
+intended to be used for research applications and personal use only. Our
+products are not sold as Medical Devices as defined in MDR 2017/745. Our
+products are not designed or intended to be used for diagnosis or
+treatment of disease.”</li>
+</ul>
+<h2 id="the-privacy-policy">The privacy policy</h2>
+<p class="src">
+EMOTIV Privacy Policy, “Effective Date: August 6, 2026”. Paragraph:
+“Delivering Personalized Emotiv-IQ Analytics, Data Pooling, &amp; Model
+Development”
+</p>
+<blockquote>
+<p>When you explicitly request Emotiv-IQ, processing your pseudonymized
+Neural Data and aggregating and pooling it into our Large Brain Model
+(LBM) is necessary to generate and deliver your personalized cognitive
+metrics. […] Data pooling across consenting users enables the LBM to
+continuously improve its accuracy, calibrate population baselines, and
+power current and future features.</p>
+</blockquote>
+<p class="src">
+EMOTIV Privacy Policy, “Effective Date: August 6, 2026”. Same paragraph
+</p>
+<blockquote>
+<p>You may disable Emotiv-IQ at any time in Account Settings. Doing so
+halts future ingestion of your Neural Data into LBM training. It does
+not remove contributions already incorporated into a trained model,
+because individual contributions cannot be isolated from model weights
+once training is complete. Where technically feasible we will apply
+retraining or machine unlearning techniques at the next full training
+cycle.</p>
+</blockquote>
+<p class="src">
+EMOTIV Privacy Policy, “Effective Date: August 6, 2026”. Section: “How
+and with whom we share information”
+</p>
+<blockquote>
+<p>EMOTIV may license trained Large Brain Model (LBM) parameters,
+weights, or API outputs to commercial, enterprise, and research partners
+. EMOTIV does not sell raw Neural Data or Personal Information to third
+parties.</p>
+</blockquote>
+<p class="src">
+EMOTIV Privacy Policy, “Effective Date: August 6, 2026”. Same section
+</p>
+<blockquote>
+<p>If EMOTIV is involved in a merger, consolidation, acquisition,
+reorganization, sale of assets or other corporate transaction, EMOTIV
+may transfer your Personal Information as part of that transaction.</p>
+</blockquote>
+<p class="foot">
+All text is quoted exactly. […] marks words left out. Pages and policy
+captured 11 November 2026. PSY524, Week 5.
+</p>
+</section><section class="g" id="g-muse" hidden><h1 id="teardown-muse-s-athena">Teardown: Muse S Athena</h1>
+<div class="qbox">
+<ol type="1">
+<li>What do they claim?</li>
+<li>What would have to be true? Who did it learn from? Who was it tested
+on?</li>
+<li>What happens to what it records?</li>
+</ol>
+</div>
+<h2 id="the-product-pages">The product pages</h2>
+<div class="shots">
+<img src="img/muse-brain-age-top.png">
+<div class="side">
+<p class="src">
+Muse Brain Age page, choosemuse.com/pages/cognitive-performance
+</p>
+<ul>
+<li>“Your brain has an age” “Now you can see it”</li>
+<li>“A weekly measure of how old your brain appears, against your actual
+age. Read directly from EEG. Built on published research.”</li>
+<li>“Over 1 billion minutes of decoded brain data” “One of the largest
+at-home EEG datasets in the world”</li>
+<li>“±7 years, published”</li>
+</ul>
+</div>
+</div>
+<p class="src">
+Muse S Athena product page, choosemuse.com/products/muse-s-athena
+</p>
+<ul>
+<li>“Athena is the first and only device to combine EEG + fNIRS
+technology to measure brain activity, track cognitive effort, and
+optimize sleep for peak performance.”</li>
+<li>“Future-proof your brain.”</li>
+<li>“Muse’s sleep staging shows 88 to 96% agreement with polysomnography
+(PSG) (Lanthier et al., 2025, SLEEP Advances).”</li>
+<li>“Muse is a general wellness product. It is not a medical device and
+is not intended to diagnose, treat, cure or prevent any disease or
+condition.”</li>
+</ul>
+<h2 id="the-privacy-policy">The privacy policy</h2>
+<p class="src">
+INTERAXON’S PRIVACY POLICY, “Effective Date of Privacy Policy: Sept 29,
+2026”. Section: “DEFINITIONS”
+</p>
+<blockquote>
+<p>“Sensor Data” means data such as brainwave patterns (through
+electroencephalogram or EEG), […] collected through the sensors on the
+Muse device.</p>
+</blockquote>
+<p class="src">
+INTERAXON’S PRIVACY POLICY, “Effective Date of Privacy Policy: Sept 29,
+2026”. Section: “When using the Muse mobile application”
+</p>
+<blockquote>
+<p>When you use the Muse application with the Muse device, we record,
+process and store your Activity Data, Sensor Data, Preference Data,
+Processed Data and Transmission Data. We use the data referenced in the
+preceding sentence to provide you with […] brain/body scientific
+research, […] and the improvement of our own algorithms and
+machine-learning models, including foundation models, that power Muse
+features such as sleep staging and brain-health metrics. Data used for
+this purpose is first de-identified.</p>
+</blockquote>
+<p class="src">
+INTERAXON’S PRIVACY POLICY, “Effective Date of Privacy Policy: Sept 29,
+2026”. Section: “Muse Connect Web Application”
+</p>
+<blockquote>
+<p>The Muse Connect web application is designed to allow a party (such
+as a coach, wellness professional or employer participating in a
+wellness program) (the “Observer”) to monitor, from the Muse Connect
+dashboard, the Muse sessions of one or more people using Muse devices in
+conjunction with the Muse Mobile application (the “Participant(s)”). […]
+We do not, however, control the Observer’s use of that data; we
+therefore recommend that, if you wish to be a Participant, you review
+the privacy policy of the Observer.</p>
+</blockquote>
+<p class="src">
+INTERAXON’S PRIVACY POLICY, “Effective Date of Privacy Policy: Sept 29,
+2026”. Section: “BUSINESS TRANSACTIONS”
+</p>
+<blockquote>
+<p>We may transfer personal information as an asset in connection with a
+proposed or completed merger or sale (including transfers made as part
+of insolvency or bankruptcy proceeding) involving all or part of our
+group of companies or as part of a corporate reorganization, financing,
+or other change in corporate control.</p>
+</blockquote>
+<p class="foot">
+All text is quoted exactly. […] marks words left out. Pages and policy
+captured 11 November 2026. PSY524, Week 5.
+</p>
+</section><section class="g" id="g-flow" hidden><h1 id="teardown-flow-fl-100">Teardown: Flow FL-100</h1>
+<div class="qbox">
+<ol type="1">
+<li>What do they claim?</li>
+<li>What would have to be true? Who did it learn from? Who was it tested
+on?</li>
+<li>What happens to what it records?</li>
+</ol>
+</div>
+<div class="qbox2">
+<p>In part 4 you heard 45%. The company says 57%. Same trial. Where does
+57% come from?</p>
+</div>
+<h2 id="the-shop-page">The shop page</h2>
+<div class="shots">
+<img src="img/flow-shop-tiles.png">
+</div>
+<p class="src">
+Flow shop page, flowneuroscience.com/shop
+</p>
+<ul>
+<li>“The Flow Depression Treatment” “Used by the NHS. No medication. No
+clinic visits.” “Clinically Proven &amp; Safe” “Medication-Free
+Alternative” “Backed by clinical evidence.” “Proven to reduce depressive
+symptoms.”</li>
+<li>“77%” “Feel better in 3 weeks” “Average time for users to report
+significant improvement.” Footnote on the tile: “Flow real-world data
+(n=14,383, Apr 2025)”</li>
+</ul>
+<h2 id="the-shop-page-and-the-fda-summary-of-the-trial-side-by-side">The
+shop page and the FDA summary of the trial, side by side</h2>
+<table class="side">
+<colgroup>
+<col class="l">
+<col class="r">
+</colgroup>
+<thead>
+<tr>
+<th>
+The shop page
+</th>
+<th>
+The FDA summary of the trial: Summary of Safety and Effectiveness Data
+(SSED), PMA P230024, 8 December 2025
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+“57%” “Depression-free by week 10” “Our largest study, published in
+Nature Medicine.”<br>Footnote on the tile: “Woodham et al. Nature
+Medicine 2024. MADRS remission 57.5% (p=0.002, OR 3.26, NNT=4).”
+</td>
+<td>
+<span class="pg">Page 23, “Table 8. Prespecified Primary and Secondary
+Endpoint Results at Week 10” (some rows and columns left out)</span>
+<div class="t8wrap">
+<table class="t8">
+<tr>
+<th>
+Endpoint (10 weeks)
+</th>
+<th>
+Active
+</th>
+<th>
+Sham
+</th>
+</tr>
+<tr>
+<td>
+N (mITT)
+</td>
+<td>
+87
+</td>
+<td>
+86
+</td>
+</tr>
+<tr>
+<td>
+HDRS-17 (baseline)
+</td>
+<td>
+19.2
+</td>
+<td>
+19.0
+</td>
+</tr>
+<tr>
+<td class="sub">
+Remission rate
+</td>
+<td>
+44.9%
+</td>
+<td>
+21.8%
+</td>
+</tr>
+<tr>
+<td>
+MADRS (baseline)
+</td>
+<td>
+24.7
+</td>
+<td>
+23.9
+</td>
+</tr>
+<tr>
+<td class="sub">
+Remission rate
+</td>
+<td>
+57.5%
+</td>
+<td>
+29.4%
+</td>
+</tr>
+</table>
+<div class="notes">
+<span class="pg">Page 13</span>“Remission was pre-specified as: HDRS-17
+score ≤7, MADRS score ≤10, MADRS-s score ≤12, at Week 10.”<br> <span
+class="pg">Page 12, abbreviations</span>“HDRS-17 (17-item Hamilton
+Depression Rating Scale), MADRS (Montgomery–Åsberg Depression Rating
+Scale)”
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+“95%” “Report no side effects” “With over 65,000 users and 25 years of
+tDCS research, no serious side effects have been reported.”<br>Footnote
+on the tile: “Flow real-world data (n=14,383, Apr 2025)”
+</td>
+<td>
+<span class="pg">Page 17</span>“As shown in Table 4, the most frequent
+AEs (active % vs. sham %), based on the Adverse Events Questionnaire
+(AEQ) included: Skin redness (63.5% vs. 18.5%), Itching (50.6%
+vs. 43.2%), Burning sensation (43.5% vs. 38.3%), Headache (42.4%
+vs. 35.8%), and Scalp pain (21.2% vs. 12.3%).”
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-privacy-policy">The privacy policy</h2>
+<p class="src">
+Flow website privacy policy, “Your data is safe with us” (no date shown
+on the policy). Section: “How do we use your personal data?”
+</p>
+<blockquote>
+<p>Interest-based advertising: We may engage third-party advertising
+companies, such as Google, to display our ads on their online services.
+We may also share information about our users with these companies to
+facilitate advertising for our services to them or similar users on
+other online platforms.</p>
+</blockquote>
+<p class="src">
+Same policy. Section: “How we use cookies” (web addresses left out)
+</p>
+<blockquote>
+<p>The third parties that are involved in placing cookies on our website
+are as follows: Amplitude […] Google […] Meta […] Tiktok […] Trustpilot
+[…] Klaviyo […] LinkedIn […] Clarity […] We also allow our advertising
+partners to collect this information through our Services.</p>
+</blockquote>
+<p class="src">
+Same policy. Section: “Who has access to my personal data?”
+</p>
+<blockquote>
+<p>Business transferees: We may share your personal data with acquirers
+and other relevant participants in business transactions (or
+negotiations for such transactions) involving a corporate divestiture,
+merger, consolidation, acquisition, reorganization, sale or other
+disposition of all or any portion of the business or assets of, or
+equity interests in Flow or our affiliates (including, in connection
+with a bankruptcy or similar proceedings).</p>
+</blockquote>
+<p class="foot">
+All text is quoted exactly. […] marks words left out. Shop page and
+policy captured 11 November 2026. FDA page numbers are pages of the PDF
+file. PSY524, Week 5.
+</p>
+</section>
+<details id="others" hidden><summary>The other groups' sheets</summary><p id="olinks"></p></details>
+</main><script>
+(function () {
+  var G = [["emotiv", "Emotiv", "#1F2A44", "#ffffff"], ["muse", "Muse", "#2f6fb3", "#ffffff"], ["flow", "Flow", "#F2C14E", "#1F2A44"]];
+  var KEY = 'psy524-w5-group';
+  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function put(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function show(k, persisted) {
+    var g = null; G.forEach(function (x) { if (x[0] === k) g = x; });
+    if (!g) return;
+    document.getElementById('drawbox').hidden = true;
+    var b = document.getElementById('banner'); b.hidden = false; b.style.background = g[2]; b.style.color = g[3];
+    document.getElementById('bname').textContent = g[1];
+    document.getElementById('bname2').textContent = g[1];
+    G.forEach(function (x) { document.getElementById('g-' + x[0]).hidden = (x[0] !== k); });
+    var o = document.getElementById('olinks'); o.innerHTML = '';
+    G.forEach(function (x) {
+      if (x[0] === k) return;
+      var a = document.createElement('a'); a.href = '#'; a.textContent = x[1];
+      a.onclick = function (ev) { ev.preventDefault(); document.getElementById('g-' + x[0]).hidden = false;
+                                  document.getElementById('g-' + x[0]).scrollIntoView(); };
+      o.appendChild(a);
+    });
+    document.getElementById('others').hidden = false;
+  }
+  var pv = (location.search.match(/preview=(\w+)/) || [])[1];
+  if (pv) { show(pv, false); return; }
+  var have = get();
+  if (have) { show(have, true); }
+  document.getElementById('draw').onclick = function () {
+    var r = new Uint32Array(1); (window.crypto || window.msCrypto).getRandomValues(r);
+    var k = G[r[0] % 3][0]; put(k); show(k, true); window.scrollTo(0, 0);
+  };
+})();
+</script></body></html>
